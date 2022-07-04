@@ -1,0 +1,55 @@
+* {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li img {
+    width: 80%;
+    height: auto;
+}
+
+.animal img {
+    width: 45%;
+    height: auto;
+}
+
+.addFood {
+    animation-name: imageAnime;
+    animation-fill-mode: backwards;
+    animation-duration: 1s;
+    position: relative;
+}
+
+@keyframes imageAnime {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0.9;
+        bottom: 5px;
+    }
+
+    40% {
+        opacity: 0.7;
+        bottom: 10px;
+    }
+
+    60% {
+        opacity: 0.5;
+        bottom: 15px;
+    }
+
+    80% {
+        opacity: 0.3;
+        bottom: 20px;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
