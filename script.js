@@ -32,6 +32,9 @@ foods.forEach(food => {
         
         if(foodsArray.length === 3) {
             // 餌三つ以上になったら赤ちゃん画像を変える
+            count = 0;
+            meter.value = count;
+            meter.classList.add('hide');
             let uni = 0;
             let koto = 0;
             let bi = 0;
@@ -64,11 +67,9 @@ foods.forEach(food => {
 });
 
 button.addEventListener('click', () => {
-    count = 0;
     foodsArray = [];
+    meter.classList.remove('hide');
     animal.innerHTML = `<h2>あかちゃん</h2>
-    <p><img src="image/animal_mouse_baby_science.png"></p>
-    <meter min="0" max="3" value="0"></meter>`;
+    <p><img src="image/animal_mouse_baby_science.png"></p>`;
     again.innerHTML = ``;
-
 });

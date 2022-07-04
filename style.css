@@ -7,6 +7,10 @@ meter {
     width: 100px;
 }
 
+.hide {
+    display: none;
+}
+
 ul {
     list-style-type: none;
     display: flex;
@@ -22,7 +26,7 @@ li img {
 }
 
 .animal img {
-    width: 45%;
+    width: 25%;
     height: auto;
 }
 
