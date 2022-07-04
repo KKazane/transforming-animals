@@ -2,6 +2,11 @@
     text-align: center;
 }
 
+meter {
+    height: 40px;
+    width: 100px;
+}
+
 ul {
     list-style-type: none;
     display: flex;
