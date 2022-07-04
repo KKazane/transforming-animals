@@ -1,9 +1,11 @@
 const foods = Array.from(document.getElementsByTagName('li'));
 const meter = document.querySelector('meter');
 const animal = document.querySelector('.animal');
+const again = document.querySelector('.again');
+const button = document.querySelector('.again');
 let interval;
 let count = 0;
-const foodsArray = [];
+let foodsArray = [];
 
 
 foods.forEach(food => {
@@ -44,16 +46,29 @@ foods.forEach(food => {
             }
 
             if(uni > 1) {
-                animal.innerHTML = `<p>ゆにこーん</p><p><img src="image/fantasy_unicorn_rainbow.png"></p>`
+                animal.innerHTML = `<h2>✨ゆにこーん✨</h2><p><img src="image/fantasy_unicorn_rainbow.png"></p>`
+                again.innerHTML = `<button type=button>もういっかい！</button>`
             } else if(koto > 1) {
-                animal.innerHTML = `<p>ことぶき</p><p><img src="image/youkai_kotobuki.png"></p>`
+                animal.innerHTML = `<h2>✨ことぶき✨</h2><p><img src="image/youkai_kotobuki.png"></p>`
+                again.innerHTML = `<button type=button>もういっかい！</button>`
             } else if(bi > 1) {
-                animal.innerHTML = `<p>ばいこーん</p><p><img src="image/fantasy_bicorn_unicorn.png"></p>`
+                animal.innerHTML = `<h2>✨ばいこーん✨</h2><p><img src="image/fantasy_bicorn_unicorn.png"></p>`
+                again.innerHTML = `<button type=button>もういっかい！</button>`
             } else {
-                animal.innerHTML = `<p>すれいぷにる</p><p><img src="image/fantasy_sleipnir.png"></p>`
+                animal.innerHTML = `<h2>✨すれいぷにる✨</h2><p><img src="image/fantasy_sleipnir.png"></p>`
+                again.innerHTML = `<button type=button>もういっかい！</button>`
             }
             
         }
     })
 });
 
+button.addEventListener('click', () => {
+    count = 0;
+    foodsArray = [];
+    animal.innerHTML = `<h2>あかちゃん</h2>
+    <p><img src="image/animal_mouse_baby_science.png"></p>
+    <meter min="0" max="3" value="0"></meter>`;
+    again.innerHTML = ``;
+
+});

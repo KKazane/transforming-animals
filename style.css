@@ -17,6 +17,10 @@ li img {
     height: auto;
 }
 
+.animal h2 {
+    font-family: "Hannotate SC";
+}
+
 .animal img {
     width: 45%;
     height: auto;
@@ -57,4 +61,15 @@ li img {
     100% {
         opacity: 0;
     }
+}
+
+button {
+    appearance: none;
+    border: 0;
+    border-radius: 10px;
+    background: rgb(248, 211, 217);
+    color: orange;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 900;
 }
